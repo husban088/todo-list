@@ -12,6 +12,7 @@
 
 html {
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 
 *,
@@ -31,6 +32,7 @@ body {
 	color: #FFF;
 	background-color: var(--light);
 	font-family: "Fira sans", sans-serif;
+	overflow-x: hidden;
 }
 
 header {
@@ -62,12 +64,12 @@ input, button {
 #new-task-input {
 	flex: 1 1 0%;
 	background-color: var(--light);
-	padding: 1.5rem 1rem;
+	padding: 1.5rem 1.5rem;
 	border-radius: 5px;
 	margin-right: 1rem;
 	color: var(--black);
-	font-size: 1.8rem;
-	box-shadow: 0 1rem 1rem rgba(0, 0, 0, .10);
+	font-size: 2rem;
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 	border: 1px solid var(--grey);
 }
 
@@ -149,7 +151,7 @@ main {
 
 .task .content .text {
 	color: var(--black);
-	font-size: 1.8rem;
+	font-size: 2rem;
 	display: block;
 	width: 100%;
 	transition: 0.4s;
@@ -174,7 +176,7 @@ main {
 	transform: translateX(-1rem);
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
 	.task .actions .edit {
 		position: relative;
 		left: 1.5rem;
@@ -183,6 +185,212 @@ main {
 	.task .actions button {
 		font-size: 1.3rem;
 		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	} 
+
+
+	#new-task-input {
+		width: 38rem;
+		font-size: 1.7rem;
+	}
+
+	#new-task-form {
+		display: table;
+		column-count: 1;
+	}
+
+	.task .content .text {
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	} 
+
+
+	#new-task-input {
+		width: 37rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 385px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	} 
+
+
+	#new-task-input {
+		width: 36rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	} 
+
+
+	#new-task-input {
+		width: 35rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 365px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 34rem;
+	}
+
+
+	#new-task-input {
+		width: 34rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 355px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 33rem;
+	}
+
+
+	#new-task-input {
+		width: 33rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 355px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 32rem;
+	}
+
+
+	#new-task-input {
+		width: 32rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 30rem;
+	}
+
+
+	#new-task-input {
+		width: 30rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 310px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 28rem;
+	}
+
+
+	#new-task-input {
+		width: 28rem;
+		font-size: 1.7rem;
+	}
+}
+
+@media only screen and (max-width: 290px) {
+	.task .actions button {
+		font-size: 1.3rem;
+		font-weight: 800;
+	}
+
+    #new-task-submit {
+		margin-top: 1.5rem;
+		padding: 1.3rem 2.5rem;
+	}
+	
+	#tasks .task {
+		width: 26rem;
+	}
+
+
+	#new-task-input {
+		width: 26rem;
+		font-size: 1.7rem;
 	}
 }
 
