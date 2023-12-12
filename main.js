@@ -1,9 +1,9 @@
-window.addEventListener('load', () => {
+window.addEventListener("load", function() {
 	const form = document.querySelector("#new-task-form");
 	const input = document.querySelector("#new-task-input");
 	const list_el = document.querySelector("#tasks");
 
-	form.addEventListener('submit', function (e) {
+	form.addEventListener("submit", function (e) {
 		e.preventDefault();
 
 		const task = input.value;
@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 		const task_actions_el = document.createElement("div");
 		task_actions_el.classList.add("actions");
 
-		const task_edit_el = document.createElement('button');
+		const task_edit_el = document.createElement("button");
 		task_edit_el.classList.add("edit");
 		task_edit_el.innerText = "Edit";
 
@@ -43,24 +43,26 @@ window.addEventListener('load', () => {
 		task_actions_el.appendChild(task_edit_el);
 		task_actions_el.appendChild(task_delete_el);
 
-		task_el.appendChild(task_actions_el);
+		task_el.appendChild(task_actions_el); 
 
 		list_el.appendChild(task_el);
 
 		input.value = '';
 
-		task_edit_el.addEventListener('click', function (e) {
+		task_edit_el.addEventListener("click", function (e) {
 			if (task_edit_el.innerText.toLowerCase() == "edit") {
 				task_edit_el.innerText = "Save";
 				task_input_el.removeAttribute("readonly");
 				task_input_el.focus();
+				task_delete_el.style.display = "none";
 			} else {
 				task_edit_el.innerText = "Edit";
 				task_input_el.setAttribute("readonly", "readonly");
+				task_delete_el.style.display = "block";
 			}
 		});
 
-		task_delete_el.addEventListener('click', function (e) {
+		task_delete_el.addEventListener("click", function (e) {
 			list_el.removeChild(task_el);
 		});
 	});
